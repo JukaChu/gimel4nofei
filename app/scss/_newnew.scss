@@ -373,7 +373,7 @@ main {
     position: absolute;
     top: 34px;
     left: 14px;
-    width: 438px;
+    width: 56.2%;
     z-index: 2;
 
     img {
@@ -492,6 +492,10 @@ main {
     right: 0;
     width: 100%;
     height: 100%;
+
+    .slick-track {
+      height: 100%;
+    }
   }
 
   .im {
@@ -1181,7 +1185,7 @@ main {
 }
 
 .hp-11 .contact-info .icon-wrap {
-  background: #0C2730;
+  background: #000;
   box-shadow: none;
   border: none;
 }
@@ -1197,38 +1201,51 @@ main {
 
 .hp-11 {
   .custom-form {
-    margin: 70px 0 0;
-    padding: 80px 0;
+    margin: 70px 0 50px;
+    padding: 80px 120px;
     width: 100%;
     border-radius: 0;
     max-width: none;
-    background: url("../img/images/form-bg.jpg") no-repeat center / cover;
+    background: #A48F65;
   }
 }
 
 .hp-11 .custom-form .flex-row {
-  gap: 53px;
+  gap: 40px;
   display: flex;
   align-items: flex-start;
 
   .input-wrap {
-    width: calc(((100% - 164px) / 3) - ((53px * 3) / 3));
+    width: calc((100% / 4) - (120px / 4));
     height: 47px;
     padding: 0;
 
     input.wpcf7-text {
       height: 47px;
-      border-bottom: 3px solid #707070;
-      color: #fff;
-      font-size: 28px;
+      border-bottom: 1px solid #001C20;
+      color: #000;
+      font-size: 20px;
 
       &::placeholder {
-        color: #D9D280;
+        color: #001C20;
       }
     }
 
     .wpcf7-spinner {
       display: none;
+    }
+
+    input.wpcf7-submit {
+      width: 100%;
+      height: 47px;
+      color: #28292D;
+      font-size: 24px;
+      background: #fff;
+
+      &:hover {
+        background: #28292D;
+        color: #fff;
+      }
     }
 
 
@@ -1237,7 +1254,7 @@ main {
     }
 
     &:last-child {
-      width: 164px;
+
     }
   }
 }
@@ -1345,54 +1362,96 @@ main {
 }
 
 @media screen and (max-width: 1500px) {
+  .first-screen-section .section-content {
+    padding: 50px 120px;
+
+    img {
+      height: 140px;
+    }
+  }
+  .block-textual {
+    padding: 50px 0;
+  }
+  .block-textual .text-wrap .ttl {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .block-textual .text-wrap p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .block-textual .single-img {
+    border-radius: 0 0 60px 0;
+  }
   .header-top__cont .main-menu ul li a {
     padding: 8px;
     font-size: 16px;
   }
-
-  .block-textual .text-wrap p {
+  .block-textual .text-wrap p small {
+    font-size: 24px;
+  }
+  .block-textual .text-wrap p strong {
     font-size: 20px;
   }
-  .slider-gallery-wrap .text-wrap {
-    font-size: 20px;
+  .colored-title-sec {
+    padding: 10px 0;
   }
-  .item-gallery span {
-    font-size: 48px;
-  }
-  .item-gallery {
-    width: 120px;
-    height: 120px;
-  }
-  .item-gallery p {
-    font-size: 16px;
-  }
-  .hp-5 .faq-list .question {
-    font-size: 32px;
-  }
-
-
-  .files-wrapper .colored-title-sec {
-    padding: 50px 0 60px;
-  }
-  .hp-10 .icons-item span {
-    font-size: 20px;
-  }
-  .block-textual .text-wrap {
-    padding: 60px 40px;
-  }
-  .block-textual.textual-map .flex-row .text-wrap .ttl {
-    margin-bottom: 50px;
-  }
-  .block-textual.textual-map .flex-row .text-wrap {
-    padding: 60px 40px;
-  }
-  .header-top .container {
-    padding: 0 15px;
+  .hp-9.finances .colored-title-sec {
+    margin-bottom: 30px;
   }
 }
 
 
 @media screen and (max-width: 1199px) {
+  .files-wrapper .colored-title-sec {
+    padding: 30px 0;
+  }
+  .files-wrapper .colored-title-sec h2 {
+    font-size: 40px;
+  }
+  .flat .content .slider-big {
+    margin-bottom: 0;
+  }
+  .hp-5 {
+    padding: 50px 0 30px;
+  }
+  .hp-6 {
+    padding: 40px 0;
+  }
+  .section-content__wrap .colored-title-sec h2, .section-content__wrap .hp-5 h2, .section-content__wrap .hp-6 h2 {
+    font-size: 40px;
+  }
+  .section-content__wrap {
+    padding: 50px 90px;
+  }
+  .colored-title-sec h2, .hp-5 h2, .hp-6 h2 {
+    font-size: 40px;
+  }
+  .hp-11 .colored-title-sec h2 {
+    font-size: 40px;
+  }
+  .hp-9.finances .colored-title-sec h2 {
+    font-size: 40px;
+  }
+  .hp-5 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .hp-11 .custom-form {
+    padding: 40px;
+  }
+  .hp-9.finances .text-wrap h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+
+    strong {
+      font-size: 21px;
+    }
+  }
+  .hp-9.finances .text-wrap p {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
   .header-top__cont .main-menu {
     display: none;
 
@@ -1578,7 +1637,8 @@ main {
     }
   }
   .block-textual .flex-row .text-wrap {
-    padding: 60px 20px;
+    padding: 0;
+    margin-bottom: 30px;
   }
   .block-textual .text-wrap p {
     margin-bottom: 20px;
@@ -1590,9 +1650,18 @@ main {
     padding: 50px 20px;
   }
   .hp-5 .faq-list .question {
-    font-size: 26px;
+    font-size: 16px;
   }
-
+  .hp-5 .faq-list .answer {
+    padding: 20px;
+  }
+  .hp-9.finances .text-wrap {
+    padding: 0;
+  }
+  .hp-9.finances .img-wrap {
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
   .hp-11 .contact-info {
     flex-direction: row;
   }
@@ -1761,7 +1830,6 @@ main {
   }
   .project-select-section .section-content .section-content__wrap .select-wrapper select {
     margin-bottom: 20px;
-    font-size: 32px;
   }
   .hp-4 .icon-wrap {
     width: 60px;
@@ -1769,10 +1837,9 @@ main {
     padding: 6px;
   }
   .hp-5 .faq-list .answer {
-    padding: 20px 0 0;
+    padding: 20px;
   }
   .hp-5 .faq-list .question {
-    font-size: 24px;
   }
 
 
@@ -1782,6 +1849,7 @@ main {
 }
 
 @media screen and (max-width: 450px) {
+
   .gallery-block .btns .arrows {
     bottom: 155px;
   }
@@ -2206,6 +2274,15 @@ main {
 }
 
 @media screen and (max-width: 900px) {
+  .slider-big {
+
+
+    .slick-list {
+      .slick-track {
+        height: 100%;
+      }
+    }
+  }
   .modal.pop-up-info-modal-v2 .pt-modal-infographic-row .section-info li {
     flex-direction: column;
     align-items: center;
@@ -2262,6 +2339,50 @@ main {
 }
 
 @media screen and (max-width: 750px) {
+  .first-screen-section .section-content {
+    padding: 30px;
+
+    img {
+      height: 120px;
+    }
+  }
+
+  .files-wrapper .colored-title-sec h2 {
+    font-size: 32px;
+  }
+  .flat .content .slider-big {
+    margin-bottom: 0;
+  }
+  .hp-5 {
+    padding: 30px 0 30px;
+  }
+  .hp-6 {
+    padding: 30px 0;
+  }
+  .section-content__wrap .colored-title-sec h2, .section-content__wrap .hp-5 h2, .section-content__wrap .hp-6 h2 {
+    font-size: 32px;
+  }
+  .section-content__wrap {
+    padding: 50px 30px;
+  }
+  .colored-title-sec h2, .hp-5 h2, .hp-6 h2 {
+    font-size: 32px;
+  }
+  .hp-11 .colored-title-sec h2 {
+    font-size: 32px;
+  }
+  .hp-9.finances .colored-title-sec h2 {
+    font-size: 32px;
+  }
+  .hp-5 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .hp-11 .custom-form {
+    padding: 30px;
+  }
+
+
   .modal.pop-up-info-modal-v2 .pt-modal-header {
     flex-direction: column-reverse;
     align-items: center;
@@ -2309,5 +2430,45 @@ main {
   }
   .single-pt-circle:nth-child(2) span {
     font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hp-9.finances .text-wrap h3 {
+    font-size: 18px;
+
+    strong {
+      font-size: 18px;
+    }
+  }
+  .project-select-section .section-content {
+    padding: 0;
+  }
+  .slider-big {
+    padding-top: 44%;
+  }
+  .flat .content .slider-small-wrap .slider-small img {
+    width: 100%;
+    margin: 0;
+  }
+  .flat .content .slider-big .slick-slide {
+    min-height: 0;
+  }
+  .hp-11 .custom-form .wpcf7-submit.wpcf7-form-control {
+    max-width: 100%;
+  }
+  .block-textual.block-textual--reverse {
+    padding: 30px 0;
+  }
+  .hp-10 .icons-item span {
+    font-size: 16px;
+  }
+  .first-screen-section .section-content {
+    padding: 30px 50px;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
   }
 }
