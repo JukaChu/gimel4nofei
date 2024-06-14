@@ -2159,6 +2159,17 @@ main {
   }
 }
 
+.modal.pop-up-info-modal-v2 .pt-modal-header .pt-modal-header-section:first-child {
+  padding: 30px 18px 18px;
+  a {
+    width: 145px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
 @media screen and (max-width: 550px) {
   .modal.pop-up-info-modal-v2 .pt-modal-infographic-row:first-child {
     display: flex;
