@@ -1,5 +1,5 @@
 .header {
-  background: #fff;
+  background: #000919;
   position: sticky;
   top: 0;
 }
@@ -100,7 +100,7 @@ main {
           font-size: 18px;
           line-height: 1.22;
           text-align: center;
-          color: #000000;
+          color: #fff;
 
           &:hover {
             text-decoration: underline;
@@ -160,6 +160,7 @@ main {
     img {
       width: 100%;
       height: auto;
+      filter: brightness(0) invert(1);
     }
   }
 
@@ -275,7 +276,7 @@ main {
 
     .ttl {
       font-weight: 500;
-      font-size: 50px;
+      font-size: 40px;
       text-align: right;
       color: #000;
       line-height: 1.2;
@@ -289,7 +290,7 @@ main {
       line-height: 1.5;
       text-align: right;
       color: #000;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
 
       strong {
         font-size: 24px;
@@ -1328,12 +1329,12 @@ main {
   .header-top__cont .main-menu {
     position: absolute;
     top: 100%;
-    background: #fff;
+    background: #000919;
     width: 100%;
     padding: 6px 19px;
     box-sizing: border-box;
     right: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    border-top: 1px solid rgba(255,255, 255, 0.6);
 
     ul {
       width: 100%;
@@ -1846,9 +1847,9 @@ main {
   background: #061831;
 }
 .search-aside {
-  background: #F4F0E5;
+  background: #000919;
   * {
-    color: #061831;
+    color: #fff !important;
   }
 }
 .container-advanced-search {
@@ -1862,45 +1863,47 @@ main {
   width: 100%;
 }
 .filter-controls label input[type=radio]+span {
-  color: #000 !important;
+  color: #fff !important;
 }
 .filter-controls label input[type=radio]+span {
 
 }
 .container-advanced-search.active-search-aside .search-aside .form-search .panel {
-  border-bottom: 1px solid #BCBCBC;
+  border-bottom: 1px solid #fff;
 }
 .filter-controls label input[type=checkbox]+span {
   background: #fff !important;
-  color: #061831;
-  border: 1px solid #061831 !important;
+  color: #000919 !important;
+  border: 1px solid #fff !important;
 }
 .filter-controls label input[type=checkbox]:checked + span {
-  background: #061831 !important;
+  background: #000919 !important;
+  border-color: #fff !important;
   color: #fff !important;
 }
 
 .search-aside .form-search .accordion .ac-header button {
-  border-color: #061831;
+  border-color: #fff;
 }
 .container-advanced-search.active-search-aside .search-aside .closePanel img {
-  filter: brightness(0);
+  filter: brightness(0) invert(1);
 }
 .search-aside .form-search .panel-sub .clear {
-  color: #061831;
+  color: #fff;
 }
 
 .filter-controls label input[type=radio]:checked+span, .irs--round .irs-from, .irs--round .irs-single, .irs--round .irs-to {
-  color: #061831;
+  color: #fff;
 }
 .irs--round .irs-bar, .irs--round .irs-line {
-  background: #061831;
+  background: #fff;
 }
 .irs--round .irs-bar {
   background: #B0B0B0;
 }
 .irs--round .irs-handle {
-  border-color: #061831;
+  border-color: #fff;
+  background-color: #000919;
 }
 
 //form right
